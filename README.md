@@ -34,7 +34,7 @@
     <img width="33%" src="https://i.ibb.co/8mFLRKL/nf.png"> 
 </p>
 
-A planilha foi desenvolvida para automatizar o processo de controle e registro dos usuários que estavam conectados em minha rede residencial (LAN e WLAN), ou seja a tabela DHCP, permitindo assim uma maior facilidade de acesso a essa informação. A programação foi construída para que a planilha conseguisse se conectar ao roteador/modem central, e capturar as informações necessárias, levando em conta que foi programada para o layout do roteador/modem fornecido pela empresa provedora de banda larga, já que é uma automação com foco em um problema local e singular. Para o uso em outros modelos basta alterar alguns parâmetros dentro do código. 
+A planilha foi elaborada para sanar uma necessidade real de uma empresa do ramo industrial, que precisava automatizar seu processo de pedido de emissão de nota fiscal (NF) para o setor fiscal. Ela foi elaborada pensando em agregar praticidade para esse processo interno, visando realizar todo o procedimento em uma única aplicação, ou seja, preenchimento do formulário, transformação do formulário em PDF e envio do arquivo para o e-mail interno do setor fiscal seguindo um modelo de mensagem contendo informações sobre quem enviou e outros dados de rastreabilidade.
 
 ### Desenvolvido com
 
@@ -50,14 +50,15 @@ Basta realizar o download da planilha e abrir ela normalmente, aceitando os aces
 
 ### Pré-requisitos
 
-Possuir a ferramenta Excel instalada, lembrando que a planilha está otimizada somente para o sistema operacional Windows (até o momento). Lembrando novamente que **é necessário o conhecimento em programação para alterar o código de acordo com seu ambiente.**
+Possuir a ferramenta Excel instalada, lembrando que a planilha está otimizada somente para o sistema operacional Windows (até o momento). Lembrando novamente que **é necessário o conhecimento em programação para alterar o código referente ao servidor SMTP que será utilizado, ao modelo de mensagem e ao local de criação dos arquivos (Excel,PDF).**
 
 
 ## Como usar
 
-Primeiramente clique no botão *[ATUALIZAR]* para dar início a execução do programa, será aberta uma janela pedindo para que forneça a senha do roteador/modem e clique no botão *[Acessar]*, possibilitando assim o acesso ao sistema dele, após isso a planilha exibira uma outra janela indicando que a conexão com o aparelho está feita e mostrara o botão *[Pegar Dados]*, clicando nele a planilha processara as informações e exportara para o Excel. Com o termino do processamento será liberado o botão *[SAIR]* para fechar o programa.
+Para utilizar a planilha deve realizar o preenchimento dos campos do formulário de acordo com os dados solicitados, depois basta clicar no botão *[Enviar Formulário]* que a própria aplicação converterá o formulário criado em Excel para o PDF, salvando no local escolhido (definido como padrão em C:\ no código), estrutura um e-mail colocando o arquivo em anexo e realizando o envio da mensagem para o e-mail do setor financeiro.
 
-Agora basta verificar os dados exportados, encontrando os aparelhos fisicamente que estão conectados na rede local pelo MAC ou IP dos aparelhos relatados, caso encontre realize o cadastro dele na planilha colocando o seu endereço MAC e a quem o aparelho pertence. Assim nas próximas vezes será possível usar os equipamentos já cadastrados para liberar o uso do campo de pesquisa, que faz uma busca do endereço MAC fornecido na exportação com os endereços MAC já cadastrados.
+Todos os parâmetros podem ser editados pelo VBA, como o servidor usado pelo SMTP, a conta utilizada para enviar o e-mail e o modelo de mensagem. Já os parâmetros do formulário estão configurados em planilhas ocultas, basta editá-los de acordo com a sua necessidade. 
+
 
 
 ## Imagens
@@ -66,17 +67,8 @@ Agora basta verificar os dados exportados, encontrando os aparelhos fisicamente 
 <p align="center" width="100%">
     <img width="33%" src="https://i.ibb.co/44mv7nW/nf2.jpg"> 
     <br>
-    <em>Após clicar no botão [ATUALIZAR] a planilha exibe essa janela pedindo que o usuário forneça a senha de acesso ao aparelho (roteador/modem)</em>
+    <em>Trecho do código em VBA que precisa ser modificado para entram em acordo com as suas necessidades e ambiente de desenvolvimento e produção. </em>
 </p>
- <hr>
- 
-<p align="center" width="100%">
-    <img width="33%" src="https://i.ibb.co/zmbGnkc/mac3.jpg"> 
-        <br>
-    <em>Se a conexão for realizada com sucesso a aplicação exibira uma janela mostrando que está em contato com o aparelho e exibira o botão [Pegar Dados] para coletar as informações de DHCP.</em>
-</p> 
- <hr>
- 
 
 ## Contato
 
