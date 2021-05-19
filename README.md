@@ -31,7 +31,7 @@
 ## Sobre o projeto
 
 <p align="center" width="100%">
-    <img width="33%" src="https://i.ibb.co/YQvKm2c/mac.jpg"> 
+    <img width="33%" src="https://i.ibb.co/8mFLRKL/nf.png"> 
 </p>
 
 A planilha foi desenvolvida para automatizar o processo de controle e registro dos usuários que estavam conectados em minha rede residencial (LAN e WLAN), ou seja a tabela DHCP, permitindo assim uma maior facilidade de acesso a essa informação. A programação foi construída para que a planilha conseguisse se conectar ao roteador/modem central, e capturar as informações necessárias, levando em conta que foi programada para o layout do roteador/modem fornecido pela empresa provedora de banda larga, já que é uma automação com foco em um problema local e singular. Para o uso em outros modelos basta alterar alguns parâmetros dentro do código. 
@@ -64,7 +64,7 @@ Agora basta verificar os dados exportados, encontrando os aparelhos fisicamente 
 
 
 <p align="center" width="100%">
-    <img width="33%" src="https://i.ibb.co/q9b4rqG/mac2.jpg"> 
+    <img width="33%" src="https://i.ibb.co/44mv7nW/nf2.jpg"> 
     <br>
     <em>Após clicar no botão [ATUALIZAR] a planilha exibe essa janela pedindo que o usuário forneça a senha de acesso ao aparelho (roteador/modem)</em>
 </p>
@@ -77,25 +77,6 @@ Agora basta verificar os dados exportados, encontrando os aparelhos fisicamente 
 </p> 
  <hr>
  
-<p align="center" width="100%">
-    <img width="33%" src="https://i.ibb.co/hcBzMq2/mac5.jpg"> 
-        <br>
-    <em>Se o sistema conseguir exportar para o Excel a tabela de DHCP aparecera uma mensagem confirmando o sucesso da ação e os dados já apareceram ao fundo na planilha.</em>
-</p>
- <hr>
- 
-<p align="center" width="100%">
-    <img width="33%" src="https://i.ibb.co/D10JgT1/mac6.jpg"> 
-        <br>
-    <em>Ao final do processo de exportação a planilha exibira outra janela indicando que a conexão com o modem/roteador foi fechada e exibira o botão de sair.</em>
-</p>
-<hr>
-
-<p align="center" width="100%">
-    <img width="33%" src="https://i.ibb.co/4fDR2pf/mac7.jpg"> 
-        <br>
-    <em>A planilha também tem um campo de pesquisa que faz uma busca (PROCV) na tabela DHCP exportada com os usuários já conhecidos e cadastrados, permitindo o controle de quem está acessando sua rede local.</em>
-</p>
 
 ## Contato
 
